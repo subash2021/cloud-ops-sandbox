@@ -4,8 +4,6 @@ This project is a fully-containerized, local sandbox environment designed to dem
 
 It provisions a complete monitoring stack (Prometheus & Grafana) to observe a simple Python web application, all defined and managed through code. It's a perfect miniature of how a modern cloud-native application environment is managed.
 
-# To generate traffic, run bash
-while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
 
 ## Architecture
 
@@ -40,4 +38,16 @@ Prerequisites
 Docker
 Docker Compose (Included with Docker Desktop)
 
+# How to Run
+1. Clone the repo
+git clone https://github.com/subash2021/cloud-ops-sandbox.git
+cd ops-interview-prep
 
+2. Build and start all services
+docker-compose up -d --build
+
+3. Generate traffic, run bash
+while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
+
+4. To Stop
+docker-compose down
