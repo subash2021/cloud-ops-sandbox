@@ -23,3 +23,8 @@ graph TD
     style B fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#9cf,stroke:#333,stroke-width:2px
     style D fill:#9c9,stroke:#333,stroke-width:2px
+
+
+
+# To generate traffic, run bash
+while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
