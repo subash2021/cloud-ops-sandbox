@@ -45,9 +45,11 @@ Docker Compose (Included with Docker Desktop)
 
 2. Build and start all services
 * docker-compose up -d --build
+* go to - http://localhost:3000/dashboards and find the single dashboard and click on it
 
 3. Generate traffic, run bash
 * while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
+* allow 5 mins and go back to the Grafana dashboard URL and observe the data 
 
 4. To Stop
 * docker-compose down
