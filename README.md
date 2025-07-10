@@ -4,6 +4,9 @@ This project is a fully-containerized, local sandbox environment designed to dem
 
 It provisions a complete monitoring stack (Prometheus & Grafana) to observe a simple Python web application, all defined and managed through code. It's a perfect miniature of how a modern cloud-native application environment is managed.
 
+# To generate traffic, run bash
+while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
+
 ## Architecture
 
 The entire environment is orchestrated by Docker Compose, creating an internal network where services can communicate.
@@ -26,5 +29,4 @@ graph TD
 
 
 
-# To generate traffic, run bash
-while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
+
