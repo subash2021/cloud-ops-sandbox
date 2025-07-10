@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s # How often to scrape targets
+
+scrape_configs:
+  - job_name: 'my-app'
+    # This address 'my-app:5000' works because Docker Compose
+    # creates a network where services can find each other by name.
+    static_configs:
+      - targets: ['my-app:5000']
