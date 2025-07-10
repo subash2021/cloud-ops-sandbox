@@ -40,14 +40,14 @@ Docker Compose (Included with Docker Desktop)
 
 # How to Run
 1. Clone the repo
-git clone https://github.com/subash2021/cloud-ops-sandbox.git
-cd ops-interview-prep
+* git clone https://github.com/subash2021/cloud-ops-sandbox.git
+* cd ops-interview-prep
 
 2. Build and start all services
-docker-compose up -d --build
+* docker-compose up -d --build
 
 3. Generate traffic, run bash
-while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
+* while true; do curl http://localhost:5000; echo " - Request sent at $(date)"; sleep 2; done
 
 4. To Stop
-docker-compose down
+* docker-compose down
