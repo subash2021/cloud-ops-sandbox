@@ -27,6 +27,17 @@ graph TD
     style C fill:#9cf,stroke:#333,stroke-width:2px
     style D fill:#9c9,stroke:#333,stroke-width:2px
 
-
+```
+# Core Concepts Demonstrated
+Infrastructure as Code (IaC): The docker-compose.yml file acts as our IaC, defining every service, network, and volume in a single, version-controlled file. This is analogous to using Terraform or AWS CloudFormation.
+Observability & Monitoring:
+Instrumentation: The Python app is instrumented to expose key metrics (e.g., request counts).
+Collection: Prometheus acts as our monitoring backend, scraping and storing these metrics (like AWS CloudWatch Metrics).
+Visualization: Grafana provides a dashboard to visualize the application's health in real-time (like AWS CloudWatch Dashboards).
+Automated Provisioning: Grafana's data source and dashboard are provisioned automatically from configuration files, eliminating manual setup and ensuring a repeatable environment.
+Containerization: Each component runs in its own isolated Docker container, demonstrating a microservices-based approach.
+Prerequisites
+Docker
+Docker Compose (Included with Docker Desktop)
 
 
